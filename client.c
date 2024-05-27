@@ -28,7 +28,7 @@ void	argument_handler(int pid, char *message)
 			else
 				kill(pid, SIGUSR2);
 			j++;
-			usleep(2000);
+			usleep(500);
 		}
 		i++;
 	}
