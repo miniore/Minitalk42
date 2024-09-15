@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: porellan <porellan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: miniore <miniore@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 10:43:57 by porellan          #+#    #+#             */
-/*   Updated: 2023/10/16 17:33:23 by porellan         ###   ########.fr       */
+/*   Updated: 2024/08/29 18:08:45 by miniore          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,15 +75,11 @@ static char	**array_maker(char const *s, char **array, int n, char c)
 char	**ft_split(char const *s, char c)
 {
 	int		strings;
-	int		i;
-	int		j;
 	char	**array;
 
 	if (!s)
 		return (NULL);
 	strings = str_numb(s, c);
-	i = 0;
-	j = 0;
 	array = (char **)malloc((strings + 1) * sizeof(char *));
 	if (!array)
 		return (0);

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf_utils.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: porellan <porellan@student.42.fr>          +#+  +:+       +#+        */
+/*   By: miniore <miniore@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:57:43 by porellan          #+#    #+#             */
-/*   Updated: 2024/01/08 20:00:13 by porellan         ###   ########.fr       */
+/*   Updated: 2024/08/29 18:11:18 by miniore          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,8 @@ void	ft_print_uint(unsigned int n, int *counter)
 {
 	char	num;
 	long	nb;
-	int		size;
 
 	nb = (long)n;
-	size = 0;
 	if (nb > 9)
 	{
 		ft_print_uint((nb / 10), counter);
